@@ -1,0 +1,197 @@
+@import 
+url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#141e30, #243b55);
+    /* color: blanchedalmond; */
+}
+
+h2 {
+    color: blanchedalmond;
+}
+
+header {
+    display: inline;
+}
+
+.header-title {
+    font-size: 14px;
+    padding: 5px;
+    background-color:rgb(16, 46, 76);
+    text-align: center;
+    color: blanchedalmond;
+}
+
+nav {
+    background-color: blanchedalmond;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    list-style-type: none;
+    height: 50px;
+    line-height: 50px;
+}
+
+ul.topnav {
+    padding: 0;
+    margin: 0;
+}
+
+ul.topnav li {
+    float: left;
+    
+}
+
+nav ul li a {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(171, 109, 219);
+    transition: 0.3s;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: blanchedalmond;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+    background-color: rgb(16, 46, 76);
+}
+
+nav ul li.active{
+    background-color:rgb(16, 46, 76);
+}
+
+footer {
+    margin-top: 200px;
+    padding: 15px;
+    color: blanchedalmond;
+    background-color:rgb(16, 46, 76);
+    text-align: center;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0px 4px 3px 3px rgba(0, 0, 0, 3);
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 97%;
+}
+
+aside {
+    width: 35%;
+    background-color: #fff;
+}
+
+.text-center {
+    text-align: left;
+}
+
+h3 {
+    color: rgb(16, 46, 76);
+}
+
+div h3 p {
+    color: rgb(16, 46, 76);
+}
+
+
+table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 75%;
+    margin: 10px auto 10px auto;
+    color: rgb(53, 41, 71);
+    background-color: #fff;
+}
+
+table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color:rgb(53, 41, 71);
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #fff;
+    text-decoration: none;
+}
+
+table tbody td {
+    border: solid 1px #DDEEEE;
+    color: rgb(53, 41, 71);
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.aksi {
+    background-color:rgb(16, 46, 76);
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.tambah {
+    padding: 10px;
+    background-color: #DDEFEF;
+    color: rgb(16, 46, 76);
+    text-shadow: 1px 1px 1px rgb(16, 46, 76);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+button {
+    background-color: rgb(16, 46, 76);
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    border: 0px;
+    margin-top: 20px;
+}
+
+
+label {
+    margin-top: 10px;
+    float: left;
+    text-align: left;
+    width: 100%;
+    color:  #243b55;
+}
+
+input {
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #f8f8f8;
+    border: 2px solid #ccc;
+    outline-color: #243b55;
+}
+
+
+.base {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ededed;
+}
