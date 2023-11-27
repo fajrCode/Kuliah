@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 02, 2022 at 07:47 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Waktu pembuatan: 27 Nov 2023 pada 05.11
+-- Versi server: 10.4.28-MariaDB
+-- Versi PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_perpus`
+-- Database: `dbperpus`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `anggota`
+-- Struktur dari tabel `anggota`
 --
 
 CREATE TABLE `anggota` (
@@ -34,28 +34,28 @@ CREATE TABLE `anggota` (
   `kode_prodi` char(10) NOT NULL,
   `no_hp_anggota` char(13) NOT NULL,
   `alamat_anggota` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `anggota`
+-- Dumping data untuk tabel `anggota`
 --
 
 INSERT INTO `anggota` (`nim`, `nama_anggota`, `jk_anggota`, `kode_prodi`, `no_hp_anggota`, `alamat_anggota`) VALUES
-('1311', 'Fajri', 'L', 'TI', '0859106500759', 'Kota Baru'),
-('1510', 'Chea', 'P', 'SI', '081369505939', 'Talang Banjar'),
-('2104', 'Nabila', 'P', 'SI', '082279754940', 'Kasang Pudak'),
-('2106', 'Angga', 'L', 'TI', '083121732855', 'Sungai Gelam'),
-('2403', 'Eka', 'P', 'TI', '08978721459', 'Kebun Handil'),
-('2406', 'Falah', 'L', 'SI', '082214307297', 'Budiman'),
-('2911', 'Aldi', 'L', 'TI', '085156481155', 'Bagan Pete'),
-('3080', 'Bobby', 'L', 'SI', '081313999987', 'Kampung Manggis'),
-('4090', 'Kasih', 'P', 'TI', '082242995450', 'Kasang'),
-('5100', 'Rian', 'L', 'SI', '08981466326', 'Tempino');
+('1311', 'Fajri', 'L', 'TI', '0859xxxxxxxxx', 'Kota Baru'),
+('1510', 'Chea', 'P', 'SI', '0813xxxxxxxx', 'Talang Banjar'),
+('2104', 'Nabila', 'P', 'SI', '0822xxxxxxxx', 'Kasang Pudak'),
+('2106', 'Angga', 'L', 'TI', '0831xxxxxxxx', 'Sungai Gelam'),
+('2403', 'Eka', 'P', 'TI', '0897xxxxxxx', 'Kebun Handil'),
+('2406', 'Falah', 'L', 'SI', '0822xxxxxxxx', 'Budiman'),
+('2911', 'Aldi', 'L', 'TI', '0851xxxxxxxx', 'Bagan Pete'),
+('3080', 'Bobby', 'L', 'SI', '0813xxxxxxxx', 'Kampung Manggis'),
+('4090', 'Kasih', 'P', 'TI', '0822xxxxxxxx', 'Kasang'),
+('5100', 'Rian', 'L', 'SI', '0898xxxxxxxx', 'Tempino');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `buku`
+-- Struktur dari tabel `buku`
 --
 
 CREATE TABLE `buku` (
@@ -65,30 +65,30 @@ CREATE TABLE `buku` (
   `penerbit` varchar(50) NOT NULL,
   `tahun_penerbit` year(4) NOT NULL,
   `gambar` varchar(55) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `buku`
+-- Dumping data untuk tabel `buku`
 --
 
 INSERT INTO `buku` (`kode_buku`, `judul`, `penulis`, `penerbit`, `tahun_penerbit`, `gambar`) VALUES
-('1000', 'Laskar Pelangi', 'Andrea', 'Bentang', 2005, '535-534-laskar pelangi.jpg'),
-('1100', 'Tentang Kamu', 'Tere Liye', 'Republika', 2016, '797-Tentang_kamu.jpg'),
-('1200', 'PERGI', 'Tere Liye', 'Republika', 2018, '862-Pergi.jpg'),
-('2000', 'Sang Pemimpi', 'Andrea', 'Bentang', 2006, '464-Sang_Pemimpi.jpg'),
-('2100', 'DILAN', 'Pidi', 'Pastel', 2014, '479-DIlan.jpg'),
-('2200', 'MILEA', 'Pidi', 'Pastel', 2016, '9-Milea.jpg'),
-('3100', '5cm', 'Donny Dhirgantoro', 'Grasindo', 2005, '634-5cm.jpg'),
-('4100', 'Perahu Kertas', 'Dee Lestari', 'Bentang Pustaka', 2003, '551-Perahu_kertas.jpg'),
-('5100', 'Garis Waktu', 'Fiersa Besari', 'Media Kita', 2016, '977-garis waktu.jpg'),
-('5200', 'Arah Langkah', 'Fiersa Besari', 'Media Kita', 2018, '738-arah langkah.jpg'),
-('6100', 'Ikhlas Paling Serius', 'Fajar Sulaiman', 'Media Kita', 2021, '106-ikhlas-paling-serius.jpg'),
-('6200', 'Sabar Paling Dalam', 'Fajar Sulaiman', 'Media Kita', 2021, '78-Sabar Paling Dalam.jpg');
+('1000', 'Laskar Pelangi', 'Andrea', 'Bentang', '2005', '535-534-laskar pelangi.jpg'),
+('1100', 'Tentang Kamu', 'Tere Liye', 'Republika', '2016', '797-Tentang_kamu.jpg'),
+('1200', 'PERGI', 'Tere Liye', 'Republika', '2018', '862-Pergi.jpg'),
+('2000', 'Sang Pemimpi', 'Andrea', 'Bentang', '2006', '464-Sang_Pemimpi.jpg'),
+('2100', 'DILAN', 'Pidi', 'Pastel', '2014', '479-DIlan.jpg'),
+('2200', 'MILEA', 'Pidi', 'Pastel', '2016', '9-Milea.jpg'),
+('3100', '5cm', 'Donny Dhirgantoro', 'Grasindo', '2005', '634-5cm.jpg'),
+('4100', 'Perahu Kertas', 'Dee Lestari', 'Bentang Pustaka', '2003', '551-Perahu_kertas.jpg'),
+('5100', 'Garis Waktu', 'Fiersa Besari', 'Media Kita', '2016', '977-garis waktu.jpg'),
+('5200', 'Arah Langkah', 'Fiersa Besari', 'Media Kita', '2018', '738-arah langkah.jpg'),
+('6100', 'Ikhlas Paling Serius', 'Fajar Sulaiman', 'Media Kita', '2021', '106-ikhlas-paling-serius.jpg'),
+('6200', 'Sabar Paling Dalam', 'Fajar Sulaiman', 'Media Kita', '2021', '78-Sabar Paling Dalam.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tabel_peminjaman`
+-- Struktur dari tabel `tabel_peminjaman`
 --
 
 CREATE TABLE `tabel_peminjaman` (
@@ -97,10 +97,10 @@ CREATE TABLE `tabel_peminjaman` (
   `tanggal_kembali` date NOT NULL,
   `kode_buku` varchar(15) NOT NULL,
   `nim` varchar(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tabel_peminjaman`
+-- Dumping data untuk tabel `tabel_peminjaman`
 --
 
 INSERT INTO `tabel_peminjaman` (`kode_peminjaman`, `tanggal_pinjam`, `tanggal_kembali`, `kode_buku`, `nim`) VALUES
@@ -123,7 +123,7 @@ INSERT INTO `tabel_peminjaman` (`kode_peminjaman`, `tanggal_pinjam`, `tanggal_ke
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -132,33 +132,33 @@ CREATE TABLE `user` (
   `nama_petugas` varchar(25) NOT NULL,
   `no_hp_petugas` char(15) DEFAULT NULL,
   `login_terakhir` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`username`, `password`, `nama_petugas`, `no_hp_petugas`, `login_terakhir`) VALUES
-('admin', '$2y$10$rWiuvhBTi3uvj77xNlnbkOZbEOWQj7jRcVqBYy9ziw6SpjzOIGJla', 'admin', NULL, '2022-07-31 05:34:06');
+('admin', '$2y$10$rWiuvhBTi3uvj77xNlnbkOZbEOWQj7jRcVqBYy9ziw6SpjzOIGJla', 'admin', NULL, '2023-11-27 05:05:23');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `anggota`
+-- Indeks untuk tabel `anggota`
 --
 ALTER TABLE `anggota`
   ADD PRIMARY KEY (`nim`);
 
 --
--- Indexes for table `buku`
+-- Indeks untuk tabel `buku`
 --
 ALTER TABLE `buku`
   ADD PRIMARY KEY (`kode_buku`);
 
 --
--- Indexes for table `tabel_peminjaman`
+-- Indeks untuk tabel `tabel_peminjaman`
 --
 ALTER TABLE `tabel_peminjaman`
   ADD PRIMARY KEY (`kode_peminjaman`),
@@ -166,7 +166,7 @@ ALTER TABLE `tabel_peminjaman`
   ADD KEY `nim` (`nim`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`username`);
