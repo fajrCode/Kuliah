@@ -1,2 +1,2 @@
 # Kuliah
-File file tugas kuliah
+College assignment files
